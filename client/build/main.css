@@ -1,0 +1,16 @@
+img {
+    float: left; 
+    padding:1px;
+    border:1px solid #021a40;
+}
+
+body {
+  font-family: "Arial";
+  background-color: green;
+}
+
+
+h4 {
+  margin: 0 0 10px 0;
+}
+
