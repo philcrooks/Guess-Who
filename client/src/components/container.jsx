@@ -10,7 +10,8 @@ var Container = React.createClass({
     for (var i = 0; i < this.props.characters.length; i++) {
       hidden.push(false);
     }
-    return { unknownCharacter: this.props.characters[0], hiddenCharacters: hidden } ;
+    var randomNo = Math.floor(Math.random() * 8);
+    return { unknownCharacter: this.props.characters[randomNo], hiddenCharacters: hidden } ;
   },
 
   questionSelected: function(question, answer) {
