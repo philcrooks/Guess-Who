@@ -2,6 +2,8 @@ var React = require('react');
 
 var Card = function (props) {
 
+
+  var styleOverlay = (props.hide) ? "block" : "none";
   return(
     <div className="card">
       <div className="pic">
@@ -26,7 +28,10 @@ var Card = function (props) {
           <p>{props.character.hairColour}</p>
           <p>{props.hide.toString()}</p>
         </div>
-      </div>     
+        <div className="card-overlay" style={{display: styleOverlay}}>
+          <img src="red_cross.png" />
+        </div> 
+      </div>    
     </div>
   )
 }

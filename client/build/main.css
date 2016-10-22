@@ -39,29 +39,49 @@ img {
   width: inherit;
 }
 
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .card {
-  border: black solid 1px;
+  border: black solid 2px;
   border-radius: 30px;
-  height: 400px;
-  width: 200px;
+  height: 320px;
+  width: 160px;
   padding: 20px;
-  margin: 5px;
+  margin: 10px;
   display: inline-block;
   vertical-align: top;
+  background-color: #ffffe5;
+  position: relative;
 }
 
 .details {
-  align-content: center;
+  margin: 10px 0 0 0;
 }
 
 .field-names {
   display: inline-block;
-  width: 75px;
+  padding: 0px 2px;
+}
+
+.field-names p {
+  text-align: right;
+  margin: 3px;
 }
 
 .field-values {
   display: inline-block;
-  width: 125px;
+  font-weight: bold;
+  padding: 0px 2px;
+}
+
+.field-values p {
+  margin: 3px;
 }
 
 
