@@ -10,8 +10,8 @@ var Card = function (props) {
       <p>House: {props.character.house}</p>
       <p>Ancestry: {props.character.ancestry}</p>
       <p>Eye colour: {props.character.eyeColour}</p>
-      <p>Hair colour: {props.character.hair}</p>
-      <p>Hidden: {props.character.hidden.toString()}</p>      
+      <p>Hair colour: {props.character.hairColour}</p>
+      <p>Hidden: {props.hide.toString()}</p>      
     </div>
   )
 }

@@ -6,8 +6,7 @@ var characters = [
     ancestry: "Half-blood",
     eyeColour: "Green",
     hairColour: "Black",
-    image: "http://hp-api.herokuapp.com/images/harry.jpg",
-    hidden: false
+    image: "http://hp-api.herokuapp.com/images/harry.jpg"
   },
   {
     name: "Hermione Granger",
@@ -16,8 +15,7 @@ var characters = [
     ancestry: "Muggleborn",
     eyeColour: "Brown",
     hairColour: "Brown",
-    image: "http://hp-api.herokuapp.com/images/hermione.jpeg",
-    hidden: false
+    image: "http://hp-api.herokuapp.com/images/hermione.jpeg"
   },
   {
     name: "Ron Weasley",
@@ -26,8 +24,7 @@ var characters = [
     ancestry: "Pure-blood",
     eyeColour: "Blue",
     hairColour: "Ginger",
-    image: "http://hp-api.herokuapp.com/images/ron.jpg",
-    hidden: false
+    image: "http://hp-api.herokuapp.com/images/ron.jpg"
   },
   {
     name: "Draco Malfoy",
@@ -36,8 +33,7 @@ var characters = [
     ancestry: "Pure-blood",
     eyeColour: "Grey",
     hairColour: "Blonde",
-    image: "http://hp-api.herokuapp.com/images/draco.jpg",
-    hidden: false
+    image: "http://hp-api.herokuapp.com/images/draco.jpg"
   },
   {
     name: "Cho Chang",
@@ -46,8 +42,7 @@ var characters = [
     ancestry: "Unknown",
     eyeColour: "Brown",
     hairColour: "Black",
-    image: "http://hp-api.herokuapp.com/images/cho.jpg",
-    hidden: false
+    image: "http://hp-api.herokuapp.com/images/cho.jpg"
   },
   {
     name: "Luna Lovegood",
@@ -56,8 +51,7 @@ var characters = [
     ancestry: "Unknown",
     eyeColour: "Grey",
     hairColour: "Blonde",
-    image: "http://hp-api.herokuapp.com/images/luna.jpg",
-    hidden: false
+    image: "http://hp-api.herokuapp.com/images/luna.jpg"
   },
   {
     name: "Ginny Weasley",
@@ -66,8 +60,7 @@ var characters = [
     ancestry: "Pure-blood",
     eyeColour: "Brown",
     hairColour: "Ginger",
-    image: "http://hp-api.herokuapp.com/images/ginny.jpg",
-    hidden: false
+    image: "http://hp-api.herokuapp.com/images/ginny.jpg"
   },
   {
     name: "Gregory Goyle",
@@ -76,8 +69,7 @@ var characters = [
     ancestry: "Pure-blood",
     eyeColour: "Unknown",
     hairColour: "Brown",
-    image: "http://hp-api.herokuapp.com/images/goyle.jpg",
-    hidden: false
+    image: "http://hp-api.herokuapp.com/images/goyle.jpg"
   }
 ]
 
