@@ -25,6 +25,14 @@ var Container = React.createClass({
     this.setState( {hiddenCharacters: hidden } )
   },
 
+  gameWon: function() {
+    var count = 0;
+    this.state.hiddenCharacters.forEach(function(flag) {
+      if (!flag) count++;
+    })
+    return (count === 1);
+  },
+
   render: function() {
     return (
       <div className="container">

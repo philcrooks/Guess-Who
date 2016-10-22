@@ -1,16 +1,67 @@
-img {
-    float: left; 
-    padding:1px;
-    border:1px solid #021a40;
-}
-
 body {
   font-family: "Arial";
-  background-color: green;
 }
 
-
-h4 {
-  margin: 0 0 10px 0;
+img {
+  align: bottom;
+  width: inherit;
+  vertical-align :bottom;
 }
+
+.menus {
+
+}
+
+.menu-question {
+  display: inline-block;
+}
+
+.menu-answer {
+  display: inline-block;
+}
+
+.ask-quesrtion {
+  display: inline-block;
+}
+
+.cards {
+  font-size: 10px;
+}
+
+.row-of-card {
+  display: inline;
+}
+
+.pic {
+  border: black solid 1px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: inherit;
+}
+
+.card {
+  border: black solid 1px;
+  border-radius: 30px;
+  height: 400px;
+  width: 200px;
+  padding: 20px;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.details {
+  align-content: center;
+}
+
+.field-names {
+  display: inline-block;
+  width: 75px;
+}
+
+.field-values {
+  display: inline-block;
+  width: 125px;
+}
+
 

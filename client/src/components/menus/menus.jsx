@@ -44,6 +44,7 @@ var Menus = React.createClass({
   },
 
   askQuestion: function() {
+    console.log("Queston:", this.state.questionChoice, "Answer:", this.getAnswer());
     this.props.handleChange(this.state.questionChoice, this.getAnswer());
   },
 

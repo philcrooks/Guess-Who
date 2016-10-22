@@ -4,14 +4,29 @@ var Card = function (props) {
 
   return(
     <div className="card">
-      <img src={props.character.image} width={200} height={300} mode='fit'/>
-      <p>Name: {props.character.name}</p>
-      <p>Gender: {props.character.gender}</p>
-      <p>House: {props.character.house}</p>
-      <p>Ancestry: {props.character.ancestry}</p>
-      <p>Eye colour: {props.character.eyeColour}</p>
-      <p>Hair colour: {props.character.hairColour}</p>
-      <p>Hidden: {props.hide.toString()}</p>      
+      <div className="pic">
+        <img src={props.character.image}/>
+      </div>
+      <div className="details">
+        <div className="field-names">
+          <p>Name:</p>
+          <p>Gender:</p>
+          <p>House:</p>
+          <p>Ancestry:</p>
+          <p>Eye colour:</p>
+          <p>Hair colour:</p>
+          <p>Hidden:</p>
+        </div>
+        <div className="field-values">
+          <p>{props.character.name}</p>
+          <p>{props.character.gender}</p>
+          <p>{props.character.house}</p>
+          <p>{props.character.ancestry}</p>
+          <p>{props.character.eyeColour}</p>
+          <p>{props.character.hairColour}</p>
+          <p>{props.hide.toString()}</p>
+        </div>
+      </div>     
     </div>
   )
 }
