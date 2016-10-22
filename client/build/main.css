@@ -25,7 +25,7 @@ img {
 }
 
 .cards {
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .row-of-card {
@@ -36,6 +36,7 @@ img {
   border: black solid 1px;
   border-radius: 20px;
   overflow: hidden;
+  max-height: 200px;
   width: inherit;
 }
 
@@ -50,8 +51,8 @@ img {
 .card {
   border: black solid 2px;
   border-radius: 30px;
-  height: 320px;
-  width: 160px;
+  height: 280px;
+  width: 150px;
   padding: 20px;
   margin: 10px;
   display: inline-block;
@@ -61,7 +62,7 @@ img {
 }
 
 .details {
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
 }
 
 .field-names {

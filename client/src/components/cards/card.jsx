@@ -2,7 +2,6 @@ var React = require('react');
 
 var Card = function (props) {
 
-
   var styleOverlay = (props.hide) ? "block" : "none";
   return(
     <div className="card">
