@@ -14,12 +14,15 @@ var Container = React.createClass({
   },
 
   questionSelected: function(question, answer) {
-    // If the answer is YES remove all those that do share the attribute
+    // If the answer is YES remove all those that do not share the attribute
+    // If the answer is NO remove all those that share the attribute
     var hidden = [];
     var characters = this.props.characters;
-    var hideCharacter = (this.state.unknownCharacter[question] !== answer);
+    var answerIsYes = (this.state.unknownCharacter[question] === answer);
+    var answerIsNo = !answerIsYes
     for (var i = 0; i < characters.length; i++) {
-      hidden[i] = ((hideCharacter && (characters[i][question] === answer)) ||
+      hidden[i] = ((answerIsNo && (characters[i][question] === answer)) ||
+                  (answerIsYes && (characters[i][question] !== answer)) ||
                   this.state.hiddenCharacters[i]);
     }
     this.setState( {hiddenCharacters: hidden } )

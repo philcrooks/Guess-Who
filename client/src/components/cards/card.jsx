@@ -17,7 +17,6 @@ var Card = function (props) {
           <p>Ancestry:</p>
           <p>Eye colour:</p>
           <p>Hair colour:</p>
-          <p>Hidden:</p>
         </div>
         <div className="field-values">
           <p>{props.character.name}</p>
@@ -26,7 +25,6 @@ var Card = function (props) {
           <p>{props.character.ancestry}</p>
           <p>{props.character.eyeColour}</p>
           <p>{props.character.hairColour}</p>
-          <p>{props.hide.toString()}</p>
         </div>
         <div className="card-overlay" style={{display: styleOverlay}}>
           <img src="red_cross.png" />
