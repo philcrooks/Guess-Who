@@ -6,20 +6,16 @@ var Cards = require('./cards/cards.jsx')
 var Container = React.createClass({
 
   getInitialState: function() {
-    return { unknownCharacter: null };
-  },
-
-  componentDidMount: function() {
-    this.setState( { unknownCharacter: this.props.characters[3] } );
+    return { unknownCharacter: this.props.characters[0] } ;
   },
 
   questionSelected: function(question, answer) {
     // If the answer is YES remove all those that do share the attribute
-    console.log(question, answer);
-    hideCharacter = (unknownCharacter[question] !== answer);
+    var hideCharacter = (this.state.unknownCharacter[question] !== answer);
     for (var character of this.props.characters) {
-      character.hidden = hideCharacter && (characters[question] === answer);
+      character.hidden = hideCharacter && (character[question] === answer);
     }
+    console.log(this.props.characters)
   },
 
   render: function() {
