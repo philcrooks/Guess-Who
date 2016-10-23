@@ -35,7 +35,8 @@ select{
 .ask-question{
   font-size: 28px;
   font-weight: bold;
-  color: red;
+  color: #dd0010;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   margin: 10px auto;
   border-radius: 20px;
   display: block;
@@ -43,13 +44,13 @@ select{
   height: 40px;
   outline: none;
   cursor: pointer;
-  background-color: #1111b3;
+  background-color: #004d9a;
 }
 
 .notification {
   text-align: center;
   font-style: italic;
-  color: #1111b3;
+  color: #004d9a;
 }
 
 .cards {
