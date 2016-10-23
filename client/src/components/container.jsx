@@ -1,7 +1,8 @@
 var React = require('react');
 
 var Menus = require('./menus/menus.jsx');
-var Cards = require('./cards/cards.jsx')
+var Cards = require('./cards/cards.jsx');
+var Notification = require('./notification.jsx')
 
 var Container = React.createClass({
 
@@ -11,7 +12,10 @@ var Container = React.createClass({
       hidden.push(false);
     }
     var randomNo = Math.floor(Math.random() * 8);
-    return { unknownCharacter: this.props.characters[randomNo], hiddenCharacters: hidden } ;
+    return {
+      unknownCharacter: this.props.characters[randomNo],
+      hiddenCharacters: hidden
+    } ;
   },
 
   questionSelected: function(question, answer) {
@@ -26,10 +30,13 @@ var Container = React.createClass({
                   (answerIsYes && (characters[i][question] !== answer)) ||
                   this.state.hiddenCharacters[i]);
     }
-    this.setState( {hiddenCharacters: hidden } )
+    this.setState( {
+      hiddenCharacters: hidden,
+      answerIsYes: answerIsYes
+    } )
   },
 
-  gameWon: function() {
+  gameOver: function() {
     var count = 0;
     this.state.hiddenCharacters.forEach(function(flag) {
       if (!flag) count++;
@@ -38,12 +45,25 @@ var Container = React.createClass({
   },
 
   render: function() {
+    var message = "";
+    if (this.state.answerIsYes !== undefined) {
+      if (this.gameOver())
+        message = "You win! " + this.state.unknownCharacter.name + " was the chosen one.";
+      else {
+        message = "The answer is ";
+        message += (this.state.answerIsYes) ? "YES." : "NO." ;
+      }
+    }
+
     return (
       <div className="container">
-        <Menus
-          characters={this.props.characters}
-          handleChange={this.questionSelected}>
-        </Menus>
+        <div className="menu-container">
+          <Menus
+            characters={this.props.characters}
+            handleChange={this.questionSelected}>
+          </Menus>
+          <Notification>{message}</Notification>
+        </div>
         <Cards
           characters={this.props.characters}
           hidden={this.state.hiddenCharacters}>

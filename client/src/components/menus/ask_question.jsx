@@ -7,7 +7,7 @@ var AskQuestion = function(props) {
   }
 
   return(
-    <button className="ask-question" onClick={handleClick}>Ask</button>
+    <button className="ask-question" onClick={handleClick}>?</button>
   )
 
 };

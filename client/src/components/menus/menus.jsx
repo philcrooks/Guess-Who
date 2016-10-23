@@ -2,7 +2,7 @@ var React = require('react');
 
 var MenuQuestion = require('./menu_question.jsx');
 var MenuAnswer = require('./menu_answer.jsx');
-var AskQuestion = require('./ask_question.jsx')
+var AskQuestion = require('./ask_question.jsx');
 
 var Menus = React.createClass({
 
