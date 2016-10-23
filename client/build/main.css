@@ -8,28 +8,57 @@ img {
   vertical-align :bottom;
 }
 
+.menu-container {
+  border: black solid 2px;
+  border-radius: 30px;
+  height: 280px;
+  width: 150px;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffe5;
+  position: relative;
+  font-size: 14px;
+}
+
 .menus {
 
 }
 
-.menu-question {
-  display: inline-block;
+select{
+  width: 100%;
+  margin: 3px;
+  cursor: pointer;
 }
 
-.menu-answer {
-  display: inline-block;
+.ask-question{
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
+  margin: 10px auto;
+  border-radius: 20px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  background-color: #1111b3;
 }
 
-.ask-quesrtion {
-  display: inline-block;
+.notification {
+  text-align: center;
+  font-style: italic;
+  color: #1111b3;
 }
 
 .cards {
   font-size: 9px;
+  display: inline-block;
 }
 
 .row-of-card {
-  display: inline;
+
 }
 
 .pic {

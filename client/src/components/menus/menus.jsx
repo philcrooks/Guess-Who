@@ -30,8 +30,8 @@ var Menus = React.createClass({
   },
 
   setQuestionChoice: function(chosenItem) {
-    // THe top-level menu has been changed. The children must be reset.
-    console.log(chosenItem)
+    // The top-level menu has been changed. The children must be reset.
+    // This change will cause the menus to be redrawn
     this.setState({
       questionChoice: chosenItem,
       answerChoice: 0
@@ -40,6 +40,7 @@ var Menus = React.createClass({
 
   setAnswerChoice: function(index, character) {
     // Have a new list of filtered characters
+    // This change will cause the menus to be redrawn
     this.setState({answerChoice: index})
   },
 

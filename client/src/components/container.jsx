@@ -30,6 +30,7 @@ var Container = React.createClass({
                   (answerIsYes && (characters[i][question] !== answer)) ||
                   this.state.hiddenCharacters[i]);
     }
+    // These changes will force the re-render.
     this.setState( {
       hiddenCharacters: hidden,
       answerIsYes: answerIsYes
@@ -48,16 +49,17 @@ var Container = React.createClass({
     var message = "";
     if (this.state.answerIsYes !== undefined) {
       if (this.gameOver())
-        message = "You win! " + this.state.unknownCharacter.name + " was the chosen one.";
+        message = this.state.unknownCharacter.name + " is the chosen one.";
       else {
         message = "The answer is ";
-        message += (this.state.answerIsYes) ? "YES." : "NO." ;
+        message += (this.state.answerIsYes) ? "'Yes'." : "'No'." ;
       }
     }
 
     return (
       <div className="container">
         <div className="menu-container">
+          <img src="logo.png" />
           <Menus
             characters={this.props.characters}
             handleChange={this.questionSelected}>
