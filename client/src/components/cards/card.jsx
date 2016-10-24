@@ -26,7 +26,7 @@ var Card = function (props) {
           <p>{props.character.hairColour}</p>
         </div>
         <div className="card-overlay" style={{display: styleOverlay}}>
-          <img src="red_cross.png" />
+          <img src="images/red_cross.png" />
         </div> 
       </div>    
     </div>

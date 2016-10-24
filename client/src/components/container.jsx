@@ -59,7 +59,7 @@ var Container = React.createClass({
     return (
       <div className="container">
         <div className="menu-container">
-          <img src="logo.png" />
+          <img src="images/logo.png" />
           <Menus
             characters={this.props.characters}
             handleChange={this.questionSelected}>
