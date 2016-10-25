@@ -57,7 +57,11 @@ var Container = React.createClass({
     }
 
     var cards = this.props.characters.map(function(character, index){
-      return <Card key={index} character={character} hide={this.state.hiddenCharacters[index]}></Card>
+      return <Card
+                key={index}
+                character={character}
+                hide={this.state.hiddenCharacters[index]}>
+              </Card>
     }.bind(this))
 
     return (
