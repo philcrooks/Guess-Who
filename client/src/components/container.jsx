@@ -1,7 +1,7 @@
 var React = require('react');
 
 var Menus = require('./menus/menus.jsx');
-var Cards = require('./cards/cards.jsx');
+var Card = require('./cards/card.jsx');
 var Notification = require('./notification.jsx')
 
 var Container = React.createClass({
@@ -56,6 +56,10 @@ var Container = React.createClass({
       }
     }
 
+    var cards = this.props.characters.map(function(character, index){
+      return <Card key={index} character={character} hide={this.state.hiddenCharacters[index]}></Card>
+    }.bind(this))
+
     return (
       <div className="container">
         <div className="menu-container">
@@ -66,10 +70,7 @@ var Container = React.createClass({
           </Menus>
           <Notification>{message}</Notification>
         </div>
-        <Cards
-          characters={this.props.characters}
-          hidden={this.state.hiddenCharacters}>
-        </Cards>
+        {cards}
       </div>
     )
   }

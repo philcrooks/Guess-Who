@@ -8,6 +8,21 @@ img {
   vertical-align :bottom;
 }
 
+.container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 .menu-container {
   border: #004d9a solid 2px;
   border-radius: 30px;
@@ -15,7 +30,6 @@ img {
   width: 150px;
   padding: 20px;
   margin: 10px;
-  display: inline-block;
   vertical-align: top;
   background-color: #ffffe5;
   position: relative;
@@ -53,15 +67,6 @@ select{
   color: #004d9a;
 }
 
-.cards {
-  font-size: 9px;
-  display: inline-block;
-}
-
-.row-of-card {
-
-}
-
 .pic {
   border: black solid 1px;
   border-radius: 20px;
@@ -86,15 +91,14 @@ select{
   width: 150px;
   padding: 20px;
   margin: 10px;
-  display: inline-block;
   vertical-align: top;
   background-color: #ffffe5;
   position: relative;
+  font-size: 9px;
 }
 
 .details {
   margin: 5px auto;
-  display: inline-block;
 }
 
 .field-names {
